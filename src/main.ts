@@ -10,14 +10,19 @@ import {
 import { commonColor, numberOfColors } from "./func/dog";
 
 // Fixa så funktionen gör det den ska
-const printSum = (a, b) => {
-	console.log(0);
+const printSum = (a: number, b: number) => {
+	console.log(a+b);
 };
 
 printSum(1, 2);
 printSum(5, 12);
 
-const arr = [
+export type user = {
+	name: string;
+	hobby: string[];
+	age: number;
+}
+ const arr: user[] = [
 	{
 		name: "Stina",
 		hobby: ["läsa böcker"],
@@ -52,8 +57,11 @@ console.log(
 );
 // skriv ut "Den personen med flest hobbies har Y stycken hobbies". Byt ut Y mot ett funktionsanrop. Skapa den funktionen.
 // skriv ut "Den äldsta personen är A och den yngsta är B". Byt ut A och B mot funktionsanrop. Ska de två funktionerna
-
-const dogs = [
+export type dog = {
+	name: string;
+	color: string;
+}
+export const dogs: dog[] = [
 	{ name: "Nisse", color: "brown" },
 	{ name: "Fiffi", color: "white" },
 	{ name: "Fluffe", color: "black" },

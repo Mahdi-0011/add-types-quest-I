@@ -1,3 +1,7 @@
-export const numberOfColors = (d) => {};
+import { dog } from "../main";
 
-export const commonColor = (d) => {};
+export const numberOfColors = (d: dog[]) => {
+
+};
+
+export const commonColor = (d: dog[]) => {};
